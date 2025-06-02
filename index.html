@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Woods Saloon - Compta RP</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Logo Black Woods Saloon" class="logo">
+        <h1>Black Woods Saloon - Comptabilité RP</h1>
+    </header>
+
+    <section class="params">
+        <h2>Paramètres</h2>
+        <label>Primes (% du CA) : <input type="number" id="prime" value="5"></label>
+        <label>Impôts (% du bénéfice) : <input type="number" id="impot" value="20"></label>
+        <label>Charges déductibles (€) : <input type="number" id="chargesDeductibles" value="0"></label>
+        <label>Charges non déductibles (€) : <input type="number" id="chargesNonDeductibles" value="0"></label>
+        <button onclick="calculer()">Calculer</button>
+        <button onclick="resetForm()">Réinitialiser</button>
+    </section>
+
+    <section class="table-section">
+        <h2>Fiches de Paie</h2>
+        <table id="payTable">
+            <thead>
+                <tr>
+                    <th>Nom 🤠</th>
+                    <th>Heures 🕰️</th>
+                    <th>CA Généré 💰</th>
+                    <th>Primes ✨</th>
+                    <th>Impôts 💸</th>
+                    <th>Charges Déductibles 📉</th>
+                    <th>Charges Non Déductibles ❌</th>
+                    <th>Salaire Net 🧾</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </section>
+
+    <footer>
+        <p>© Black Woods Saloon - 2025</p>
+    </footer>
+
+    <script src="static/js/script.js"></script>
+</body>
+</html>
