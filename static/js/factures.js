@@ -7,7 +7,9 @@ fetch(apiUrl)
         tbody.innerHTML = '';
 
         data.forEach(facture => {
-            let date = facture.date || "Non disponible"; // Affiche la date réelle de l'API si dispo
+            // Si la date est disponible dans l'API, on l'affiche, sinon "Non disponible"
+            const date = facture.date || "Non disponible";
+
             const row = `<tr>
                 <td>${facture.id}</td>
                 <td>${facture.name}</td>
