@@ -14,28 +14,26 @@
     </header>
 
     <section class="params">
-        <h2>Paramètres</h2>
-        <label>Primes (% du CA) : <input type="number" id="prime" value="5"></label>
-        <label>Impôts (% du bénéfice) : <input type="number" id="impot" value="20"></label>
-        <label>Charges déductibles (€) : <input type="number" id="chargesDeductibles" value="0"></label>
-        <label>Charges non déductibles (€) : <input type="number" id="chargesNonDeductibles" value="0"></label>
+        <h2>Paramètres Entreprise</h2>
+        <label>% Impôts : <input type="number" id="impot" value="20"></label>
+        <label>% Primes : <input type="number" id="prime" value="5"></label>
+        <label>% Dividendes : <input type="number" id="dividende" value="10"></label>
+        <label>Charges Déductibles (€) : <input type="number" id="chargesDeductibles" value="0"></label>
+        <label>Charges Non Déductibles (€) : <input type="number" id="chargesNonDeductibles" value="0"></label>
         <button onclick="calculer()">Calculer</button>
         <button onclick="resetForm()">Réinitialiser</button>
     </section>
 
     <section class="table-section">
-        <h2>Fiches de Paie</h2>
+        <h2>Fiches Employés</h2>
         <table id="payTable">
             <thead>
                 <tr>
-                    <th>Nom 🤠</th>
+                    <th>Employé (Nom)</th>
                     <th>Heures 🕰️</th>
                     <th>CA Généré 💰</th>
-                    <th>Primes ✨</th>
-                    <th>Impôts 💸</th>
-                    <th>Charges Déductibles 📉</th>
-                    <th>Charges Non Déductibles ❌</th>
-                    <th>Salaire Net 🧾</th>
+                    <th>Primes ✨ (manuel)</th>
+                    <th>Salaire (€)</th>
                 </tr>
             </thead>
             <tbody></tbody>
@@ -44,6 +42,7 @@
 
     <footer>
         <p>© Black Woods Saloon - 2025</p>
+        <a href="factures.html" class="back-btn">Voir les factures</a>
     </footer>
 
     <script src="static/js/script.js"></script>
