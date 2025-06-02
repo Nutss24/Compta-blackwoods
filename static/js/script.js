@@ -1,1 +1,0 @@
-console.log('Script Black Woods Saloon chargé !');
